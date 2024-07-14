@@ -1,16 +1,16 @@
 {
-  "homepage": "https://github.com/Ravindra230104/Workout-Tracker",
+  "homepage": "https://ravindra230104.github.io/Workout-Tracker",
   "name": "workout-tracker",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "predeploy": "ng build --configuration production --base-href=https://ravindra230104.github.io/Workout-Tracker/",
+    "predeploy": "ng build --configuration production --base-href=/",
     "deploy": "ngh --dir=dist/workout-tracker",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
-  },  
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^18.1.0",

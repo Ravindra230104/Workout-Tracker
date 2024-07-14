@@ -33,6 +33,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "https://github.com/Ravindra230104/Workout-Tracker/",
               "budgets": [
                 {
                   "type": "initial",

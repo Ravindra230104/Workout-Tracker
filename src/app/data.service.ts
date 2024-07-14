@@ -38,9 +38,10 @@ export class DataService {
   }
 
   addWorkout(name: string, type: string, minutes: number) {
-    const user = this.users.find(u => u.name === name);
-    if (user) {
-      user.workouts.push({ type, minutes });
+    const userIndex = this.users.findIndex(u => u.name === name);
+
+    if (userIndex !== -1) {
+      this.users[userIndex].workouts.push({ type, minutes });
     } else {
       this.users.push({
         id: this.users.length + 1,

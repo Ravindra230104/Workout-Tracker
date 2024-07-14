@@ -1,5 +1,3 @@
-// app.component.ts
-
 import { Component } from '@angular/core';
 import { UserWorkout } from './workout-list/user-workout.model';
 
@@ -9,12 +7,12 @@ import { UserWorkout } from './workout-list/user-workout.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title = 'workout-tracker';
   refresh: boolean = false;
   selectedUser?: UserWorkout;
-  users: UserWorkout[] = []; // Assuming this is populated with data
+  users: UserWorkout[] = [];  
 
   onWorkoutAdded() {
-    this.refresh = !this.refresh;
+    this.refresh = !this.refresh;  
   }
-  
 }
